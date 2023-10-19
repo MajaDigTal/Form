@@ -5,42 +5,53 @@
     <title>Kjæledyr registrering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form action="index.php" method="POST">
-      <label for="eier">Eiers Navn:</label>
-      <input type="text" id="eier" required /><br />
+    <div>
+      <h1>Registrering</h1>
+      <form action="index.php" method="POST">
+        <label for="eier">Eiers Navn:</label>
+        <input type="text" id="eier" placeholder="Ola Normann" required /><br />
 
-      <label for="dyret">Dyrets Navn:</label>
-      <input type="text" id="dyret" required /><br />
+        <label for="dyret">Dyrets Navn:</label>
+        <input type="text" id="dyret" placeholder="Fido" /><br />
 
-      <label for="Art">Art:</label>
-      <select id="Art" name="art_select" required>
-        <option value="" disabled selected hidden>Select an option</option>
-        <option value="hund">Hund</option>
-        <option value="katt">Katt</option></select
-      ><br />
+        <label for="Art">Art:</label>
+        <select id="Art" name="art_select" required>
+          <option value="" disabled selected hidden>Select an option</option>
+          <option value="hund">Hund</option>
+          <option value="katt">Katt</option></select
+        ><br />
 
-      <label for="alder">Alder:</label>
-      <input type="date" id="alder" name="alder" required /><br />
+        <label for="alder">Alder:</label>
+        <input type="date" id="alder" name="alder" required /><br />
 
-      <label for="gender">Kjønn:</label>
+        <label for="gender">Kjønn:</label>
 
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Gutt</label>
+        <p class="gender">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Gutt</label>
 
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Jente</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Jente</label>
 
-      <input type="radio" id="other" name="gender" value="other" />
-      <label for="other">Annet</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Annet</label><br />
+        </p>
 
-      <label for="farge">Farge:</label>
-      <input type="text" id="farge" required /><br />
+        <label for="farge">Farge:</label>
+        <input type="text" id="farge" required /><br />
 
-      <label for="bilde">Bilde:</label>
-      <input type="file" id="bilde" name="bilde" accept="image/*" /> <br />
-      <input type="submit" value="Send inn" />
-    </form>
+        <label for="bilde">Bilde:</label>
+        <input type="file" id="bilde" name="bilde" accept="image/*" /> <br />
+        <input type="submit" value="Send inn" />
+      </form>
+    </div>
   </body>
 </html>

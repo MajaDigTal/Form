@@ -1,0 +1,40 @@
+head {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  background-color: pink;
+  background-image: linear-gradient(#d01dd3, #590969);
+  padding: 40px;
+  border: solid #ddd;
+  border-radius: 10px;
+}
+
+.gender {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  outline-color: palevioletred;
+  border: 1px solid #ddd;
+}
+
+select {
+  border: 1px solid #ddd;
+  outline-color: palevioletred;
+}
