@@ -4,6 +4,7 @@ head {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-image: url(image/skog.jpg);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -22,7 +23,6 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
-
 form {
   display: flex;
   flex-direction: column;
